@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="345.0" style="-fx-background-color: #EEF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.UpdateProfesseurController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="108.0" prefWidth="700.0" style="-fx-background-color: #EEF;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#143f8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier professeur">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Line endX="100.0" startX="-100.0" stroke="#0a264d">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Line>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="370.0" prefWidth="226.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="44.0" text="Nom">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="nom" prefHeight="25.0" prefWidth="213.0" promptText="Nom" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="44.0" text="Prénom">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="prenom" prefHeight="25.0" prefWidth="213.0" promptText="Prénom" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="44.0" text="CIN">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="cin" prefHeight="25.0" prefWidth="212.0" promptText="Code d'indentité" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label text="Adresse">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="address" prefHeight="25.0" prefWidth="213.0" promptText="n°, secteur, quartier, ville" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="45.0" text="PHONE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="phone" prefHeight="25.0" prefWidth="213.0" promptText="Phone" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="45.0" text="Email">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="email" prefHeight="25.0" prefWidth="213.0" promptText="E-mail" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="79.0" text="Recrutement">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dateR" prefHeight="25.0" prefWidth="177.0" promptText="Date de recrutement" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="194.0">
+               <children>
+                  <ComboBox fx:id="departement" prefHeight="25.0" prefWidth="277.0" promptText="Département" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="194.0">
+               <children>
+                  <Button fx:id="Update" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#updateProfesseur" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: #2f72ba;" text="Modifier" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>
