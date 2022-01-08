@@ -192,6 +192,9 @@ public class MetierImpl implements IMetier{
             PreparedStatement pstm = conn.prepareStatement("DELETE FROM Departement WHERE ID_DEPART = ?");
             pstm.setInt(1,depart.getId_depart());
             pstm.executeUpdate();
+            PreparedStatement pt= conn.prepareStatement("DELETE FROM Professeur WHERE ID_DEPART = ?");
+            pt.setInt(1,depart.getId_depart());
+            pt.executeUpdate();
         }catch (Exception e){
             e.printStackTrace();
         }

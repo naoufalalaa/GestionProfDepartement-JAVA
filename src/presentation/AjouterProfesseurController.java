@@ -96,6 +96,13 @@ public class AjouterProfesseurController implements Initializable {
             alert.setHeaderText("Ajouté avec succès");
             alert.setContentText("Le professeur "+Nom+" "+Prenom+" a été ajouté avec succès!");
             alert.show();
+            nom.setText("");
+            prenom.setText("");
+            cin.setText("");
+            address.setText("");
+            email.setText("");
+            phone.setText("");
+            dateR.setValue(LocalDate.of(2000,01,01));
         }catch(Exception e ){
             e.printStackTrace();
             Alert alert = new Alert(Alert.AlertType.WARNING);
